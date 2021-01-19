@@ -193,6 +193,8 @@ body {
     background: #c12020;
 }
 
+
+
 .bl-bought {
     box-sizing: border-box;
     border-radius: 5px;
@@ -274,7 +276,6 @@ body {
 
 }
 .bl-badge:hover{
-    animation-direction: alternate;
     background:blue;
     height: 40px;
 }
@@ -288,8 +289,51 @@ body {
     visibility: hidden;
 }
 
+[data-tooltip]::before {
+    z-index: 1;
+    text-align: center;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-left: 0;
+    margin-top: -20px;
+    background: darkviolet;
+    color: white;
+    visibility: hidden;
+    content: attr(data-tooltip);
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 0;
+    transition: 1s;
+}
 
+[data-tooltip]:hover::before {
+    margin-left: -100px;
+    margin-top: -40px;
+    width: 220px;
+    height: 20px;
+    opacity: 1;
+    visibility: visible;
+    font-size: 103%;
+}
 
+@media print {
 
+    .bl-badge{
+        padding: 0px 10px 10px;
+        background: white;
+        border: 3px solid darkviolet;
+        color: white;
+        height: 30px;
+        line-height: 0;
+    }
+    .bl-notHidden{
+        display: none;
+    }
+    .bl-hidden{
+        font-size: medium;
+        color: black;
+        visibility: visible;
+    }
 
-
+}

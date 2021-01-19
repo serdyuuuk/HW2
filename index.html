@@ -10,7 +10,7 @@
     <div class="bl-list">
         <div class="bl-add">
             <input class="bl-text" type="text" placeholder="Назва товару">
-            <button class="bl-addButton">Додати</button>
+            <button class="bl-addButton" data-tooltip="Створити новий товар">Додати</button>
         </div>
         <div class="bl-row">
             <div class="bl-products">
@@ -18,13 +18,13 @@
                     <input class="bl-productName" type="text" value="Помідори">
                 </div>
                 <div class="bl-count">
-                    <button class="bl-minus">-</button>
+                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
                     <span class="bl-label">3</span>
-                    <button class="bl-plus">+</button>
+                    <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
                 </div>
                 <div class="bl-buttons">
-                    <button class="bl-buy">Куплене</button>
-                    <button class="bl-delete">x</button>
+                    <button class="bl-buy"  data-tooltip="Додати товар в Куплене">Куплене</button>
+                    <button class="bl-delete" data-tooltip="Видалити товар">x</button>
                 </div>
             </div>
             <div class="bl-products">
@@ -32,13 +32,13 @@
                     <input class="bl-productName" type="text" value="Огірки">
                 </div>
                 <div class="bl-count">
-                    <button class="bl-minus">-</button>
+                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
                     <span class="bl-label">5</span>
-                    <button class="bl-plus">+</button>
+                    <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
                 </div>
                 <div class="bl-buttons">
-                    <button class="bl-buy">Куплене</button>
-                    <button class="bl-delete">x</button>
+                    <button class="bl-buy"  data-tooltip="Додати товар в Куплене">Куплене</button>
+                    <button class="bl-delete" data-tooltip="Видалити товар">x</button>
                 </div>
             </div>
             <div class="bl-products">
@@ -46,13 +46,13 @@
                     <input class="bl-productName" type="text" value="Яблука">
                 </div>
                 <div class="bl-count">
-                    <button class="bl-minus">-</button>
+                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
                     <span class="bl-label">1</span>
-                    <button class="bl-plus">+</button>
+                    <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
                 </div>
                 <div class="bl-buttons">
-                    <button class="bl-buy">Куплене</button>
-                    <button class="bl-delete">x</button>
+                    <button class="bl-buy"  data-tooltip="Додати товар в Куплене">Куплене</button>
+                    <button class="bl-delete" data-tooltip="Видалити товар">x</button>
                 </div>
             </div>
         </div>
@@ -77,7 +77,8 @@
         <div class="bl-alreadyBought"></div>
     </div>
 </div>
-<div class="bl-badge">Buy list
+<div class="bl-badge">
+    <h class="bl-notHidden">Buy list</h>
     <p class="bl-hidden">Created by:</p>
     <p class="bl-hidden">Fedir Serdiuk</p>
 </div>
