@@ -14,8 +14,6 @@ body {
 
 .bl-background {
     text-align: center;
-    top: 0;
-    left: 0;
     min-width: 100%;
     font-size: 100%;
     font-weight: bold;
@@ -67,7 +65,7 @@ body {
     float: right;
 }
 
-.bl-addButton:active{
+.bl-addButton:active {
     background: #4f8385;
 }
 
@@ -81,7 +79,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
-.bl-textPlace{
+
+.bl-textPlace {
     box-sizing: border-box;
     max-height: 20px;
     padding-top: 20px;
@@ -90,6 +89,7 @@ body {
     float: left;
     text-align: left;
 }
+
 .bl-productName {
     width: 70%;
     font-weight: bold;
@@ -150,7 +150,7 @@ body {
 }
 
 .bl-minus:active {
-   background: #c12020;;
+    background: #c12020;;
 }
 
 .bl-buttons {
@@ -260,6 +260,15 @@ body {
     border-color: lightgrey;
 }
 
+.bl-badge {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    font-max-size: 10px;
+    background: blueviolet;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
 
 
 
