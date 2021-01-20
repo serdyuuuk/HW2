@@ -210,7 +210,6 @@ body {
 @media (max-width: 500px) {
     .bl-bought {
         width: 95%;
-        max-width: 800px;
     }
 }
 
