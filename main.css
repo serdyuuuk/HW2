@@ -194,7 +194,6 @@ body {
 }
 
 
-
 .bl-bought {
     box-sizing: border-box;
     border-radius: 5px;
@@ -274,16 +273,17 @@ body {
     transition: all 1s ease;
 
 }
-.bl-badge:hover{
-    background:blue;
+
+.bl-badge:hover {
+    background: blue;
     height: 40px;
 }
 
-.bl-badge:hover .bl-hidden{
+.bl-badge:hover .bl-hidden {
     visibility: visible;
 }
 
-.bl-hidden{
+.bl-hidden {
     font-weight: normal;
     visibility: hidden;
 }
@@ -318,7 +318,11 @@ body {
 
 @media print {
 
-    .bl-badge{
+    .bl-list {
+        width: 63%;
+    }
+
+    .bl-badge {
         padding: 0px 10px 10px;
         background: white;
         border: 3px solid darkviolet;
@@ -326,10 +330,12 @@ body {
         height: 30px;
         line-height: 0;
     }
-    .bl-notHidden{
+
+    .bl-notHidden {
         display: none;
     }
-    .bl-hidden{
+    
+    .bl-hidden {
         font-size: medium;
         color: black;
         visibility: visible;
